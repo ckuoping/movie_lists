@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie_List</title>
+
+  {{!-- 載入bootstrap.css套件 --}}
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+
+</head>
+
+<body>
+  <!-- 放樣板固定的地方 navigation -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/"><i class="fas fa-angle-double-right"></i>Latest Movie List</a>
+    </div>
+  </nav>
+
+  <!-- 放會更動的地方partial templates will replace the part of "body" here -->
+  {{{ body }}}
+
+  {{!-- 載入jquery --}}
+  <script src="/javascripts/jquery-3.3.1.js"></script>
+  {{!-- 載入popper --}}
+  <script src="/javascripts/popper.min.js"></script>
+  {{!-- 載入bootsrap.js --}}
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>
